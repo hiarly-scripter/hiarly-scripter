@@ -2,13 +2,13 @@
 
 # Oi, eu sou o HiarlyScripter 👋
 
-Faço mods para o **R.E.P.O.** — um jogo caótico de coleta de itens com criaturas que preferem que você não faça isso.
-
-Gosto de mods que mudam a experiência sem precisar de uma lista de dependências do tamanho de um manual de instruções.
+Faço mods para jogos — gosto de coisas que mudam a experiência sem precisar de uma lista de dependências do tamanho de um manual de instruções.
 
 ---
 
-## 🎮 Mods publicados
+## 🎮 R.E.P.O.
+
+Um jogo caótico de coleta de itens com criaturas que preferem que você não faça isso.
 
 | Mod | O que faz | Versão |
 |---|---|---|
@@ -16,6 +16,8 @@ Gosto de mods que mudam a experiência sem precisar de uma lista de dependência
 | [🎒 Bag Expander](https://github.com/hiarly-scripter/HiarlyScripter-BagExpander) | Inventário configurável de 0 a 10 slots | [![Thunderstore](https://img.shields.io/badge/Thunderstore-v1.0.2-brightgreen?style=flat-square)](https://thunderstore.io/c/repo/p/HiarlyScripter/BagExpander/) |
 
 ---
+
+<!-- Novos jogos entram aqui como novas seções -->
 
 ## 🛠️ Stack
 
