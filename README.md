@@ -12,8 +12,8 @@ Um jogo caótico de coleta de itens com criaturas que preferem que você não fa
 
 | Mod | O que faz | Versão |
 |---|---|---|
-| [🔫 Huntsman Loot](https://github.com/hiarly-scripter/HiarlyScripter-HuntsmanLoot) | O Huntsman larga a espingarda ao morrer | [![Thunderstore](https://img.shields.io/badge/Thunderstore-v1.1.2-brightgreen?style=flat-square)](https://thunderstore.io/c/repo/p/HiarlyScripter/HuntsmanLoot/) |
-| [🎒 Bag Expander](https://github.com/hiarly-scripter/HiarlyScripter-BagExpander) | Inventário configurável de 0 a 10 slots | [![Thunderstore](https://img.shields.io/badge/Thunderstore-v1.0.2-brightgreen?style=flat-square)](https://thunderstore.io/c/repo/p/HiarlyScripter/BagExpander/) |
+| [🔫 Huntsman Loot](https://github.com/HiarlyScripter/HiarlyScripter-HuntsmanLoot) | O Huntsman larga a espingarda ao morrer | [![Thunderstore](https://img.shields.io/badge/Thunderstore-v1.1.2-brightgreen?style=flat-square)](https://thunderstore.io/c/repo/p/HiarlyScripter/HuntsmanLoot/) |
+| [🎒 Bag Expander](https://github.com/HiarlyScripter/HiarlyScripter-BagExpander) | Inventário configurável de 0 a 10 slots | [![Thunderstore](https://img.shields.io/badge/Thunderstore-v1.0.2-brightgreen?style=flat-square)](https://thunderstore.io/c/repo/p/HiarlyScripter/BagExpander/) |
 
 ---
 
