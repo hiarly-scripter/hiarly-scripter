@@ -14,6 +14,7 @@ Um jogo caótico de coleta de itens com criaturas que preferem que você não fa
 |---|---|---|
 | [🔫 Huntsman Loot](https://github.com/HiarlyScripter/HiarlyScripter-HuntsmanLoot) | O Huntsman larga a espingarda ao morrer | [![Thunderstore](https://img.shields.io/badge/Thunderstore-v1.1.2-brightgreen?style=flat-square)](https://thunderstore.io/c/repo/p/HiarlyScripter/HuntsmanLoot/) |
 | [🎒 Bag Expander](https://github.com/HiarlyScripter/HiarlyScripter-BagExpander) | Inventário configurável de 0 a 10 slots | [![Thunderstore](https://img.shields.io/badge/Thunderstore-v1.0.2-brightgreen?style=flat-square)](https://thunderstore.io/c/repo/p/HiarlyScripter/BagExpander/) |
+| [🔍 LootPulse](https://github.com/HiarlyScripter/HiarlyScripter-LootPulse) | Pressione F para escanear valuables no raio — brackets + ícones no mapa | [![Thunderstore](https://img.shields.io/badge/Thunderstore-v1.0.0-brightgreen?style=flat-square)](https://thunderstore.io/c/repo/p/HiarlyScripter/LootPulse/) |
 
 ---
 
