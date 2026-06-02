@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <!-- Brazilian green gradient -->
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00B140;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#006B27;stop-opacity:1" />
+    </linearGradient>
+    <!-- Tech glow gold -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFE600;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFAA00;stop-opacity:1" />
+    </linearGradient>
+    <!-- Blue gradient -->
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#003DA5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#001A5C;stop-opacity:1" />
+    </linearGradient>
+    <!-- Inner shield gradient -->
+    <linearGradient id="innerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#001A5C;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#000D2E;stop-opacity:1" />
+    </linearGradient>
+    <!-- Glow filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <!-- Gold glow -->
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <!-- Clip path for shield -->
+    <clipPath id="shieldClip">
+      <polygon points="200,28 340,80 340,220 200,372 60,220 60,80"/>
+    </clipPath>
+  </defs>
+
+  <!-- ===== OUTER SHIELD — GREEN ===== -->
+  <polygon points="200,20 348,76 348,228 200,380 52,228 52,76"
+           fill="url(#greenGrad)" filter="url(#glow)"/>
+
+  <!-- ===== GOLD BORDER STROKE ===== -->
+  <polygon points="200,20 348,76 348,228 200,380 52,228 52,76"
+           fill="none" stroke="url(#goldGrad)" stroke-width="6"/>
+
+  <!-- ===== INNER SHIELD — DARK BLUE ===== -->
+  <polygon points="200,44 328,90 328,218 200,356 72,218 72,90"
+           fill="url(#innerGrad)"/>
+
+  <!-- ===== TECH GRID LINES (circuit board feel) ===== -->
+  <g opacity="0.12" stroke="#FFE600" stroke-width="1" clip-path="url(#shieldClip)">
+    <!-- Horizontal lines -->
+    <line x1="52" y1="110" x2="348" y2="110"/>
+    <line x1="52" y1="140" x2="348" y2="140"/>
+    <line x1="52" y1="170" x2="348" y2="170"/>
+    <line x1="52" y1="200" x2="348" y2="200"/>
+    <line x1="52" y1="230" x2="348" y2="230"/>
+    <line x1="52" y1="260" x2="348" y2="260"/>
+    <line x1="52" y1="290" x2="348" y2="290"/>
+    <!-- Vertical lines -->
+    <line x1="110" y1="20" x2="110" y2="380"/>
+    <line x1="145" y1="20" x2="145" y2="380"/>
+    <line x1="180" y1="20" x2="180" y2="380"/>
+    <line x1="215" y1="20" x2="215" y2="380"/>
+    <line x1="250" y1="20" x2="250" y2="380"/>
+    <line x1="285" y1="20" x2="285" y2="380"/>
+    <line x1="320" y1="20" x2="320" y2="380"/>
+  </g>
+
+  <!-- ===== CIRCUIT NODES ===== -->
+  <g fill="#FFE600" opacity="0.25">
+    <circle cx="110" cy="140" r="3"/>
+    <circle cx="145" cy="170" r="3"/>
+    <circle cx="180" cy="200" r="3"/>
+    <circle cx="215" cy="230" r="3"/>
+    <circle cx="250" cy="200" r="3"/>
+    <circle cx="285" cy="170" r="3"/>
+    <circle cx="320" cy="140" r="3"/>
+    <circle cx="145" cy="260" r="3"/>
+    <circle cx="285" cy="260" r="3"/>
+    <circle cx="200" cy="290" r="3"/>
+  </g>
+
+  <!-- ===== CORNER ACCENT LINES (tech brackets) ===== -->
+  <g stroke="#FFE600" stroke-width="2" fill="none" opacity="0.6">
+    <!-- Top-left bracket -->
+    <polyline points="82,100 82,88 94,88"/>
+    <!-- Top-right bracket -->
+    <polyline points="318,100 318,88 306,88"/>
+    <!-- Bottom-left bracket -->
+    <polyline points="90,300 90,312 102,312"/>
+    <!-- Bottom-right bracket -->
+    <polyline points="310,300 310,312 298,312"/>
+  </g>
+
+  <!-- ===== HFS MAIN TEXT ===== -->
+  <text
+    x="200"
+    y="230"
+    font-family="'Arial Black', 'Impact', 'Haettenschweiler', sans-serif"
+    font-size="128"
+    font-weight="900"
+    text-anchor="middle"
+    letter-spacing="-4"
+    fill="url(#goldGrad)"
+    filter="url(#goldGlow)"
+  >HFS</text>
+
+  <!-- ===== THIN GOLD SEPARATOR LINES ===== -->
+  <line x1="90" y1="244" x2="150" y2="244" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.8"/>
+  <line x1="250" y1="244" x2="310" y2="244" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.8"/>
+
+  <!-- ===== SUBTITLE TEXT ===== -->
+  <text
+    x="200"
+    y="272"
+    font-family="'Courier New', 'Consolas', monospace"
+    font-size="14"
+    font-weight="700"
+    text-anchor="middle"
+    letter-spacing="5"
+    fill="#FFE600"
+    opacity="0.9"
+  >HIARLY SCRIPTER</text>
+
+  <!-- ===== TOP ACCENT — 5 STARS (Brazil has 5 World Cups) ===== -->
+  <g fill="#FFE600" filter="url(#goldGlow)" opacity="0.95">
+    <!-- Star at 168 -->
+    <polygon points="148,68 151,77 161,77 153,83 156,92 148,86 140,92 143,83 135,77 145,77" transform="scale(0.55) translate(121,58)"/>
+    <!-- Star at 180 -->
+    <polygon points="148,68 151,77 161,77 153,83 156,92 148,86 140,92 143,83 135,77 145,77" transform="scale(0.55) translate(157,58)"/>
+    <!-- Star at 200 (center) -->
+    <polygon points="148,68 151,77 161,77 153,83 156,92 148,86 140,92 143,83 135,77 145,77" transform="scale(0.65) translate(161,52)"/>
+    <!-- Star at 220 -->
+    <polygon points="148,68 151,77 161,77 153,83 156,92 148,86 140,92 143,83 135,77 145,77" transform="scale(0.55) translate(229,58)"/>
+    <!-- Star at 232 -->
+    <polygon points="148,68 151,77 161,77 153,83 156,92 148,86 140,92 143,83 135,77 145,77" transform="scale(0.55) translate(265,58)"/>
+  </g>
+
+  <!-- ===== BOTTOM TECH TAG ===== -->
+  <text
+    x="200"
+    y="338"
+    font-family="'Courier New', 'Consolas', monospace"
+    font-size="10"
+    font-weight="400"
+    text-anchor="middle"
+    letter-spacing="3"
+    fill="#00B140"
+    opacity="0.7"
+  >BRASIL · TECH · CODE</text>
+
+  <!-- ===== OUTER GOLD CORNER DOTS ===== -->
+  <g fill="#FFE600" opacity="0.5">
+    <circle cx="200" cy="26" r="3"/>
+    <circle cx="344" cy="78" r="3"/>
+    <circle cx="344" cy="226" r="3"/>
+    <circle cx="200" cy="374" r="3"/>
+    <circle cx="56" cy="226" r="3"/>
+    <circle cx="56" cy="78" r="3"/>
+  </g>
+</svg>
