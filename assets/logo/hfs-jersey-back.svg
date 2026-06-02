@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="800" height="460">
+  <defs>
+
+    <!-- Gold top→bottom gradient -->
+    <linearGradient id="gGold" x1="400" y1="158" x2="400" y2="410"
+                    gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#FFE900"/>
+      <stop offset="55%"  stop-color="#FFB600"/>
+      <stop offset="100%" stop-color="#C97F00"/>
+    </linearGradient>
+
+    <!-- Green fill gradient (slight diagonal for depth) -->
+    <linearGradient id="gGreen" x1="200" y1="158" x2="600" y2="410"
+                    gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#14C452"/>
+      <stop offset="40%"  stop-color="#009B38"/>
+      <stop offset="100%" stop-color="#005E21"/>
+    </linearGradient>
+
+    <!-- Diagonal stripe pattern — distress/vintage texture -->
+    <pattern id="pStripe" width="7" height="7"
+             patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="7" height="7" fill="transparent"/>
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#000" stroke-width="2.2"/>
+    </pattern>
+
+    <!-- Clip = exact shape of HFS letters -->
+    <clipPath id="hfsClip">
+      <text x="400" y="410"
+            text-anchor="middle"
+            font-family="'Arial Black', Gadget, sans-serif"
+            font-size="345" font-weight="900" letter-spacing="-12">HFS</text>
+    </clipPath>
+
+  </defs>
+
+  <!-- ═══════════════════════════════════════════
+       HFS — 4 LAYER COLLEGIATE OUTLINE STACK
+       (same technique as jersey numbers)
+  ════════════════════════════════════════════ -->
+
+  <!-- LAYER 1 — thick outer black (farthest back) -->
+  <text x="400" y="410"
+        text-anchor="middle"
+        font-family="'Arial Black', Gadget, sans-serif"
+        font-size="345" font-weight="900" letter-spacing="-12"
+        stroke="#000000" stroke-width="48" stroke-linejoin="round"
+        fill="#000000"
+        style="paint-order:stroke fill"/>
+
+  <!-- LAYER 2 — gold band -->
+  <text x="400" y="410"
+        text-anchor="middle"
+        font-family="'Arial Black', Gadget, sans-serif"
+        font-size="345" font-weight="900" letter-spacing="-12"
+        stroke="url(#gGold)" stroke-width="30" stroke-linejoin="round"
+        fill="url(#gGold)"
+        style="paint-order:stroke fill"/>
+
+  <!-- LAYER 3 — thin inner black border -->
+  <text x="400" y="410"
+        text-anchor="middle"
+        font-family="'Arial Black', Gadget, sans-serif"
+        font-size="345" font-weight="900" letter-spacing="-12"
+        stroke="#0C0C00" stroke-width="14" stroke-linejoin="round"
+        fill="#0C0C00"
+        style="paint-order:stroke fill"/>
+
+  <!-- LAYER 4 — main green fill (no stroke) -->
+  <text x="400" y="410"
+        text-anchor="middle"
+        font-family="'Arial Black', Gadget, sans-serif"
+        font-size="345" font-weight="900" letter-spacing="-12"
+        fill="url(#gGreen)"/>
+
+  <!-- ═══════════════════════════════════════════
+       DISTRESS TEXTURE — diagonal stripes
+       clipped to the letter shapes
+  ════════════════════════════════════════════ -->
+  <rect x="0" y="0" width="800" height="460"
+        fill="url(#pStripe)" opacity="0.11"
+        clip-path="url(#hfsClip)"/>
+
+  <!-- ═══════════════════════════════════════════
+       INNER DESIGN (clipped to HFS shape)
+       Brazilian diamond + tech circuit star
+       — same soul as the "0" inner design
+  ════════════════════════════════════════════ -->
+  <g clip-path="url(#hfsClip)">
+
+    <!-- Outer losango (Brazilian diamond) -->
+    <polygon points="400,128  632,282  400,436  168,282"
+             fill="none" stroke="#FFE900" stroke-width="3.8" opacity="0.60"/>
+
+    <!-- Inner losango -->
+    <polygon points="400,165  594,282  400,399  206,282"
+             fill="none" stroke="#FFE900" stroke-width="1.8" opacity="0.30"/>
+
+    <!-- Subtle cross-hairs through center -->
+    <line x1="168" y1="282" x2="632" y2="282"
+          stroke="#FFE900" stroke-width="1" opacity="0.18"/>
+    <line x1="400" y1="128" x2="400" y2="436"
+          stroke="#FFE900" stroke-width="1" opacity="0.18"/>
+
+    <!-- ── Center circuit star ── -->
+    <!-- outer glow ring -->
+    <circle cx="400" cy="282" r="26"
+            fill="none" stroke="#FFE900" stroke-width="1.5" opacity="0.40"/>
+    <!-- 5-point star -->
+    <polygon
+      points="400,258  406.1,276.1  425.3,276.1  410.6,287.3  416.7,305.4
+              400,294.2  383.3,305.4  389.4,287.3  374.7,276.1  393.9,276.1"
+      fill="#FFE900" opacity="0.82"/>
+
+    <!-- ── Circuit traces from diamond corners ── -->
+    <g stroke="#FFE900" stroke-width="2" fill="none" opacity="0.55">
+      <!-- TOP corner — branches left + right -->
+      <polyline points="400,128  378,106  352,106"/>
+      <polyline points="400,128  422,106  448,106"/>
+      <!-- RIGHT corner -->
+      <polyline points="632,282  655,258  655,242"/>
+      <polyline points="632,282  655,306  655,322"/>
+      <!-- BOTTOM corner -->
+      <polyline points="400,436  378,458  352,458"/>
+      <polyline points="400,436  422,458  448,458"/>
+      <!-- LEFT corner -->
+      <polyline points="168,282  145,258  145,242"/>
+      <polyline points="168,282  145,306  145,322"/>
+    </g>
+
+    <!-- Circuit nodes (endpoint pads) -->
+    <g fill="#FFE900" opacity="0.72">
+      <circle cx="352" cy="106" r="4"/>
+      <circle cx="448" cy="106" r="4"/>
+      <circle cx="655" cy="242" r="4"/>
+      <circle cx="655" cy="322" r="4"/>
+      <circle cx="352" cy="458" r="4"/>
+      <circle cx="448" cy="458" r="4"/>
+      <circle cx="145" cy="242" r="4"/>
+      <circle cx="145" cy="322" r="4"/>
+    </g>
+
+    <!-- Diamond corner anchor dots -->
+    <g fill="#FFE900" opacity="0.68">
+      <circle cx="400" cy="128" r="5.5"/>
+      <circle cx="632" cy="282" r="5.5"/>
+      <circle cx="400" cy="436" r="5.5"/>
+      <circle cx="168" cy="282" r="5.5"/>
+    </g>
+
+  </g>
+  <!-- ══ end inner design ══ -->
+
+</svg>
